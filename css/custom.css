@@ -1,0 +1,159 @@
+html, body{
+  min-height: 100%;
+}
+
+body{
+  position: relative;
+}
+.overlay{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+.overlay-dialog{
+    position: absolute;
+    top:50%;
+    right:50%;
+    background-color: #fff;
+    transform: translateX(50%) translateY(-50%);
+    border-radius: 10px;
+}
+
+.overlay-dialog #close-dialog{
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+.overlay-dialog .fa-times{
+    padding:10px;
+}
+
+.overlay-content{/*
+    padding:10px;
+    width:100%;
+    height: 100%;*/
+}
+
+#dialog-image{
+    padding-left: 0;
+    padding-right:0;
+    padding-bottom: 10px;
+    padding-top: 35px;
+}
+
+#dialog-description{
+    padding:20px;
+}
+
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    color: #fff;
+    background-image: url('../img/WebsiteShotOfTyson.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 500px; 
+    
+}
+
+header .header-content {
+    position: relative;
+    width: 50%;
+    padding: 100px 15px;
+    height:100%;
+}
+
+header .header-content .header-content-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+header .header-content .header-content-inner p {
+    text-align: left;
+    font-size: 6em;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 1em;
+    color: rgba(255,255,255,1);
+}
+
+header .header-content .header-content-inner span {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+    text-align:left !important;
+    padding-left:6px;
+}
+
+.bg-primary{
+    background-color: #435056;
+}
+.bg-secondary{
+    background-color: #718B96;
+
+    color: #fff;
+}
+
+.image-sections img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-sections div .col-lg-6, .image-sections div .col-lg-3{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.aboutpanel{
+    background-color: #eee;
+    position: relative;
+}
+
+.panel-tile span{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    color: white;
+    top: 61%;
+    right: 0%;
+    font-size: 2em;
+    font-family: 'Indie Flower', cursive;
+}
+
+#textgame, #hobbies, #websites, #homeserver, #path, #education{
+    visibility: hidden;
+}
+
+#homeserver, #hobbies{
+    top:44%;
+}
+
+#textgame{
+    top:0%;
+}
+
+ #education{
+    top:80%;
+ }
+
+a:hover, .panel-tile:hover{
+    cursor: pointer;
+}
+
+#myCarousel{
+    margin-top: 35px;
+}
+
+
+
+
+
