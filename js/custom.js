@@ -75,6 +75,7 @@ function showOverlay(panel){
 	document.getElementById('carousel-img3').src = panel.images[2];
 	document.getElementById('carousel-img4').src = panel.images[3];
 	document.getElementById('dialog-description').innerHTML = panel.text;
+	document.getElementById('dialog-title').innerHTML = panel.title;
 	$('#overlay').fadeIn(100);
 }
 

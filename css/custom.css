@@ -147,6 +147,21 @@ a:hover, .panel-tile:hover{
     margin-top: 35px;
 }
 
+#dialog-description{
+    font-size: 1.3em;
+    font-family: 'Indie Flower', cursive;
+}
+
+#dialog-title{
+    text-align: center;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    margin-top:4px;
+    font-family: 'Indie Flower', cursive;
+}
+
 .carousel-inner img{
     width: 100%;
     max-height: 600px;
