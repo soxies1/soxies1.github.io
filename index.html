@@ -39,6 +39,8 @@
 
 
 
+    <script src="js/variables.js"></script>
+
 
 </head>
 
@@ -65,7 +67,7 @@
 
     <section class="aboutpanel">
 
-    <div class="overlay" id="overlay" >
+    <div class="overlay" id="overlay">
         <div class=overlay-dialog>
             <div class="overlay-content">
                 <section>
@@ -81,19 +83,19 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="img/panel/originals/textgame.png" alt="Text-based RPG">
+                          <img id="carousel-img1" src="img/carousel/games/textgame.png">
                         </div>
 
                         <div class="item">
-                          <img src="img/Roll.png" alt="Roll-a-ball Unity tutorial">
+                          <img id="carousel-img2" src="img/carousel/games/roll.png">
                         </div>
 
                         <div class="item">
-                          <img src="img/Unity.png" alt="Unity 2D RPG">
+                          <img id="carousel-img3" src="img/carousel/games/unity.png">
                         </div>
 
                         <div class="item">
-                          <img src="img/Space.png" alt="Space-shooter Unity tutorial">
+                          <img id="carousel-img4" src="img/carousel/games/space.png">
                         </div>
                       </div>
 
@@ -110,7 +112,7 @@
                 </section>
                 <section>
                     <p id="dialog-description">
-                        Here's is some sample text of what would be in the description beside the picture
+                        What really sparked my passion for coding was a classic style text-based RPG I wrote in Java after my first year of university. Since then, I have done many projects with a good few being game related.
                     </p>
                 </section>
             </div>
@@ -122,28 +124,28 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center image-sections">
                     <div class="row">
 
-                        <div class="col-lg-6 panel-tile" onclick="showOverlay()">
-                            <img src="img/textgame.png" id="textgameimage">
+                        <div class="col-lg-6 panel-tile" onclick="showOverlay(games)">
+                            <img src="img/panel/textgame.png" id="textgameimage">
                             <span id="textgame">My first game</span>
                         </div>
 
-                        <div class="col-lg-3 panel-tile">
+                        <div class="col-lg-3 panel-tile" onclick="showOverlay(hobbies)">
                             <img src="img/panel/backpack.jpg">
                             <span id="hobbies">Hobbies</span>
                         </div>
 
-                        <div class="col-lg-3 panel-tile">
+                        <div class="col-lg-3 panel-tile" onclick="showOverlay(education)">
                             <!-- <img src="img/panel/University-of-Victoria-Logo.jpg"> -->
                             <img src="img/panel/uvic_logo.jpg">
                             <span id="education">Education</span>
                         </div>
 
-                        <div class="col-lg-3 panel-tile">
-                            <img src="img/bekitten.png">
+                        <div class="col-lg-3 panel-tile" onclick="showOverlay(websites)">
+                            <img src="img/panel/bekitten.png">
                             <span id="websites">Websites</span>
                         </div>
 
-                        <div class="col-lg-3 panel-tile">
+                        <div class="col-lg-3 panel-tile" onclick="showOverlay(roadAhead)">
                             <img src="img/panel/path.jpg">
                             <span id="path">Road ahead</span>
                         </div>
@@ -157,9 +159,9 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-3 panel-tile">
-                            <img src="img/rasp.jpg">
-                            <span id="homeserver" >Home server</span>
+                        <div class="col-lg-3 panel-tile" onclick="showOverlay(server)">
+                            <img src="img/panel/rasp.jpg">
+                            <span id="homeserver">Home server</span>
                         </div>
 
                         <div class="col-lg-6 panel-tile">
@@ -198,8 +200,6 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
-
-    <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>

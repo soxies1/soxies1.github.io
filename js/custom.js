@@ -1,27 +1,4 @@
 
-    // function mouseOverTextGame() {
-    //     addAnimationClass("textgame", "slideDown");
-    // }
-
-    // document.getElementById('textgameimage').addEventListener("mouseover", mouseOverTextGame);
-
-    // function addAnimationClass(elemId, animationClass){
-    // 	var elem = document.getElementById(elemId);
-    //     if(!elem.classList.contains(animationClass)){
-    //         elem.classList.add(animationClass);
-    //     }
-    // }
-
-// Initialize slick    
-$(document).ready(function(){
-  $('.your-class').slick({
-  	dots: true,
-    infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1
-  });
-});
-
 $(window).scroll(function() {
 	$('#textgame').each(function(){
 	var imagePos = $(this).offset().top;
@@ -89,12 +66,18 @@ $(window).scroll(function() {
 });
 
 function hideOverlay(){
-	//$('#overlay').hide(100);
 	$('#overlay').fadeOut(100);
 }
 
-function showOverlay(){
-	//$('#overlay').show(100);
+function showOverlay(panel){
+	document.getElementById('carousel-img1').src = panel.images[0];
+	document.getElementById('carousel-img2').src = panel.images[1];
+	document.getElementById('carousel-img3').src = panel.images[2];
+	document.getElementById('carousel-img4').src = panel.images[3];
+	document.getElementById('dialog-description').innerHTML = panel.text;
 	$('#overlay').fadeIn(100);
 }
+
+
+
 
