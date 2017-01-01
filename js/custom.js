@@ -37,7 +37,7 @@ $(window).scroll(function() {
 	var imagePos = $(this).offset().top;
 
 	var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+400) {
+		if (imagePos < topOfWindow+630) {
 			$(this).addClass("slideUp");
 		}
 	});
@@ -59,11 +59,18 @@ $(window).scroll(function() {
 	var imagePos = $(this).offset().top;
 
 	var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+550) {
+		if (imagePos < topOfWindow+600) {
 			$(this).addClass("slideUp");
 		}
 	});
 });
+
+$(".continue").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 1000);
+});
+
 
 function hideOverlay(){
 	$('#overlay').fadeOut(100);
@@ -77,6 +84,9 @@ function showOverlay(panel){
 	document.getElementById('dialog-description').innerHTML = panel.text;
 	document.getElementById('dialog-title').innerHTML = panel.title;
 	$('#overlay').fadeIn(100);
+	$('html, body').animate({
+        scrollTop: $("#overlay").offset().top
+    }, 500);
 }
 
 

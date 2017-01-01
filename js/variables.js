@@ -8,7 +8,7 @@ var games = {
 var hobbies = {
 	title: "Hobbies",
 	text: "Keeping active and exploring the great canadian back yard are just some of the things I like to spend my time doing.",
-	images: ["img/carousel/hobbies/backpack.jpg", "img/carousel/hobbies/bike.jpg", "img/carousel/hobbies/hike.jpg","img/carousel/hobbies/ski.jpg"]
+	images: ["img/carousel/hobbies/games.jpg", "img/carousel/hobbies/bike.jpg", "img/carousel/hobbies/hike.jpg","img/carousel/hobbies/ski.jpg"]
 }
 
 var education = {
@@ -20,7 +20,7 @@ var education = {
 var websites = {
 	title: "Websites",
 	text: "Most of my experince so far has been in web development, I always find myself making websites for personal use, or others.",
-	images: ["img/carousel/websites/bekitten.png", "img/carousel/websites/studybuddy.png", "img/carousel/websites/modev.png","img/carousel/websites/questions.png"]
+	images: ["img/carousel/websites/bekitten.png", "img/carousel/websites/studybuddy.jpeg", "img/carousel/websites/modev.png","img/carousel/websites/questions.png"]
 }
 
 var roadAhead = {
@@ -32,5 +32,5 @@ var roadAhead = {
 var server = {
 	title: "Home Server",
 	text: "Setting up a home server on a raspberry pi was one of my most practical and fun projects I have done so far. Aside from the money I've saved on hosting, the experience of working with LAMP and MEAN have been really valuable in my experience as a web developer.",
-	images: ["img/carousel/server/rasp.jpg", "img/carousel/server/lamp.png", "img/carousel/server/mean.jpg","img/carousel/server/ssh.jpg"]
+	images: ["img/carousel/server/rasp.jpg", "img/carousel/server/lamp.jpg", "img/carousel/server/mean.jpg","img/carousel/server/ssh.png"]
 }

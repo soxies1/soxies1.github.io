@@ -46,11 +46,24 @@ body{
     padding:20px;
 }
 
+.header-wrapper{
+    height:100vh;
+    position: relative;
+}
 
-header {
+.continue{
+    position: absolute;
+    bottom:1%;
+    right:50%;
+    transform: translateX(50%);
+    border-radius: 100%;
+}
+
+
+.header {
+    height:100%;
     position: relative;
     width: 100%;
-    min-height: auto;
     color: #fff;
     background-image: url('../img/WebsiteShotOfTyson.jpg');
     background-position: center;
@@ -59,42 +72,73 @@ header {
     
 }
 
-header .header-content {
+.header .header-content {
     position: relative;
     width: 50%;
-    padding: 100px 15px;
     height:100%;
 }
 
-header .header-content .header-content-inner {
+.header .header-content .header-content-inner {
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translateY(-50%);
 }
 
-header .header-content .header-content-inner p {
+.header .header-content .header-content-inner p {
     text-align: left;
     font-size: 6em;
     margin-top: auto;
     margin-bottom: auto;
     line-height: 1em;
     color: rgba(255,255,255,1);
+    font-family: 'Baloo Thambi', cursive;
 }
 
-header .header-content .header-content-inner span {
+.header .header-content .header-content-inner span {
     font-family: 'Indie Flower', cursive;
     font-size: 2em;
     text-align:left !important;
     padding-left:6px;
 }
 
+#about{
+    display: inline-block;
+}
+
 .bg-primary{
     background-color: #435056;
+    height:13%;
 }
 .bg-secondary{
     background-color: #718B96;
-
+    margin-top: -5px;
     color: #fff;
+}
+
+.image-sections{
+    height: 100%;
+    margin: 0 10%;
+}
+
+.image-sections .row1{
+    height: 66%;
+}
+
+.image-sections .row2{
+    height: 34%;
+}
+
+.col-half{
+    width:50%;
+    position: relative;
+    float: left;
+}
+
+.col-quarter{
+    width:25%;
+    position: relative;
+    float: left;
 }
 
 .image-sections img{
@@ -107,9 +151,15 @@ header .header-content .header-content-inner span {
     padding-right: 0px !important;
 }
 
+.section-heading{
+    font-family: 'Baloo Thambi', cursive;
+}
+
 .aboutpanel{
     background-color: #eee;
     position: relative;
+    height:87%;
+    display: inline-block;
 }
 
 .panel-tile span{
@@ -127,12 +177,18 @@ header .header-content .header-content-inner span {
     visibility: hidden;
 }
 
-#homeserver, #hobbies{
+#homeserver{
     top:44%;
+}
+
+#hobbies{
+    top:14%;
+    color: black;
 }
 
 #textgame{
     top:0%;
+    color: #22EE22;
 }
 
  #education{
@@ -159,15 +215,11 @@ a:hover, .panel-tile:hover{
     left:0;
     top:0;
     margin-top:4px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Baloo Thambi', cursive;
 }
 
 .carousel-inner img{
     width: 100%;
     max-height: 600px;
 }
-
-
-
-
 
