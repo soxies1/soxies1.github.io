@@ -104,6 +104,7 @@ body{
 
 #about{
     display: inline-block;
+    width:100%;
 }
 
 .bg-primary{
@@ -160,6 +161,7 @@ body{
     position: relative;
     height:87%;
     display: inline-block;
+    width:100%;
 }
 
 .panel-tile span{
