@@ -92,7 +92,7 @@ body{
     margin-bottom: auto;
     line-height: 1em;
     color: rgba(255,255,255,1);
-    font-family: 'Baloo Thambi', cursive;
+    //font-family: 'Baloo Thambi', cursive;
 }
 
 .header .header-content .header-content-inner span {
@@ -152,7 +152,7 @@ body{
 }
 
 .section-heading{
-    font-family: 'Baloo Thambi', cursive;
+    //font-family: 'Baloo Thambi', cursive;
 }
 
 .aboutpanel{
@@ -215,7 +215,7 @@ a:hover, .panel-tile:hover{
     left:0;
     top:0;
     margin-top:4px;
-    font-family: 'Baloo Thambi', cursive;
+    //font-family: 'Baloo Thambi', cursive;
 }
 
 .carousel-inner img{
