@@ -2,7 +2,7 @@
 var games = {
 	title: "Games",
 	text: "What really sparked my passion for coding was a classic style text-based RPG I wrote in Java after my first year of university. Since then, I have done many projects with a good few being game related.",
-	images: ["img/carousel/games/textgame.png", "img/carousel/games/roll.png", "img/carousel/games/unity.png", "img/carousel/games/space.png"]
+	images: ["img/carousel/games/textgame.png", "img/carousel/games/roll.png", "img/carousel/games/raft.png", "img/carousel/games/space.png"]
 }
 
 var hobbies = {
