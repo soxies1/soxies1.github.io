@@ -2,24 +2,24 @@
 var games = {
 	title: "Games",
 	text: "What really sparked my passion for coding was a classic style text-based RPG I wrote in Java after my first year of university. Since then, I have done many projects with a good few being game related.",
-	images: ["img/carousel/games/textgame.png", "img/carousel/games/roll.png", "img/carousel/games/raft.png", "img/carousel/games/space.png"]
+	images: ["img/carousel/games/textgame.png", "img/carousel/games/raft.png", "img/carousel/games/roll.png", "img/carousel/games/space.png"]
 }
 
 var hobbies = {
 	title: "Hobbies",
-	text: "Keeping active and exploring the great canadian back yard are just some of the things I like to spend my time doing.",
+	text: "Keeping active and exploring Canada's backyard are just some of the things I like to spend my time doing.",
 	images: ["img/carousel/hobbies/games.jpg", "img/carousel/hobbies/bike.jpg", "img/carousel/hobbies/hike.jpg","img/carousel/hobbies/ski.jpg"]
 }
 
 var education = {
 	title: "Education",
-	text: "Switching to computer science from engineering was the best decision I ever made. I continue to grow and expand my skill sets while exploring my endless options for future career paths.",
+	text: "Switching to computer science from engineering was the best decision I ever made. I continue to grow and expand my skill sets, while exploring my endless options for future career paths.",
 	images: ["img/carousel/education/uvic.jpg", "img/carousel/education/awards.jpg", "img/carousel/education/year.jpg","img/carousel/education/compsci.jpg"]
 }
 
 var websites = {
 	title: "Websites",
-	text: "Most of my experince so far has been in web development, I always find myself making websites for personal use, or others.",
+	text: "Most of my experience so far has been in web development, I find myself frequently making websites for personal use or others.",
 	images: ["img/carousel/websites/bekitten.png", "img/carousel/websites/studybuddy.jpeg", "img/carousel/websites/modev.png","img/carousel/websites/questions.png"]
 }
 

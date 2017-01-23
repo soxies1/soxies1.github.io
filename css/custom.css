@@ -189,8 +189,7 @@ body{
 }
 
 #textgame{
-    top:0%;
-    color: #22EE22;
+    top:50%;
 }
 
  #education{
@@ -207,7 +206,7 @@ a:hover, .panel-tile:hover{
 
 #dialog-description{
     font-size: 1.3em;
-    font-family: 'Indie Flower', cursive;
+    //font-family: 'Indie Flower', cursive;
 }
 
 #dialog-title{
@@ -223,5 +222,12 @@ a:hover, .panel-tile:hover{
 .carousel-inner img{
     width: 100%;
     max-height: 600px;
+}
+
+#playRaftIt{
+    position: absolute;
+    bottom: 20%;
+    right:50%;
+    transform: translateX(50%);
 }
 

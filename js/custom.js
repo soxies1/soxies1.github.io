@@ -74,9 +74,14 @@ $(".continue").click(function() {
 
 function hideOverlay(){
 	$('#overlay').fadeOut(100);
+	$('#playRaftIt').hide();
 }
 
 function showOverlay(panel){
+	if(panel === games){
+		$('#playRaftIt').show();
+	}
+
 	document.getElementById('carousel-img1').src = panel.images[0];
 	document.getElementById('carousel-img2').src = panel.images[1];
 	document.getElementById('carousel-img3').src = panel.images[2];
@@ -88,7 +93,5 @@ function showOverlay(panel){
         scrollTop: $("#overlay").offset().top
     }, 500);
 }
-
-
 
 
