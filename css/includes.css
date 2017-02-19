@@ -1,0 +1,21 @@
+.info-sections{
+	margin: 0 10%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.info-sections section{
+	overflow:auto;
+}
+
+.info-sections section img{
+	width: 100%;
+}
+
+.project-description img{
+	width: 50px !important;
+}
+
+.info-sections hr{
+	border-top: 1px solid #ddd !important;
+}

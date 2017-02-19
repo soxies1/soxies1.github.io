@@ -59,6 +59,10 @@ body{
     border-radius: 100%;
 }
 
+.homebutton{
+    border-radius: 100%;
+}
+
 
 .header {
     height:100%;
@@ -156,6 +160,18 @@ body{
     //font-family: 'Baloo Thambi', cursive;
 }
 
+.section-heading span{
+    border-bottom: 0 solid #fff;
+}
+
+.section-heading a {
+    color: white;
+}
+
+.section-heading a:hover {
+    text-decoration: none;
+}
+
 .aboutpanel{
     background-color: #eee;
     position: relative;
@@ -229,5 +245,10 @@ a:hover, .panel-tile:hover{
     bottom: 20%;
     right:50%;
     transform: translateX(50%);
+}
+
+.returntomain{
+    text-align: center;
+    padding-bottom: 10px;
 }
 
