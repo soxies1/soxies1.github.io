@@ -79,9 +79,6 @@ function hideOverlay(){
 }
 
 function showOverlay(panel){
-	if(panel === server){
-	 	selectHeader("#header-servers");
-	}
 
 	document.getElementById('carousel-img1').src = panel.images[0];
 	document.getElementById('carousel-img2').src = panel.images[1];
@@ -116,6 +113,13 @@ function loadHackathonContent(){
 	$("#aboutpanel").hide().load('includes/hackathons.html').fadeIn('500');
 }
 
+function loadServerContent(){
+	var section = "#header-servers";
+	selectHeader(section);
+
+	$("#aboutpanel").hide().load('includes/server.html').fadeIn('500');
+}
+
 function returntomain(callback){
 	$("#aboutpanel").hide().load('includes/main.html').fadeIn('500', callback);
 	
@@ -137,18 +141,6 @@ function deselectHeader(){
         }, 200);
 
 	selectedCategory = null;
-}
-
-function showServerOverlay(){
-	if(selectedCategory == null){
-		showOverlay(server);
-	}else{
-		returntomain(serverSelect);
-	}
-}
-
-function serverSelect(){
-	showOverlay(server);
 }
 
 $(document).ready(returntomain());
