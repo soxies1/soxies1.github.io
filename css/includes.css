@@ -25,3 +25,8 @@
 	height:40px;
 	font-size:22px;
 }
+
+.sub-info-sections{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}

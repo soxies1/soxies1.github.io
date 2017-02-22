@@ -75,21 +75,6 @@ $(".continue").click(function() {
 function hideOverlay(){
 	$('#overlay').fadeOut(100);
 	deselectHeader();
-	//$('#playRaftIt').hide();
-}
-
-function showOverlay(panel){
-
-	document.getElementById('carousel-img1').src = panel.images[0];
-	document.getElementById('carousel-img2').src = panel.images[1];
-	document.getElementById('carousel-img3').src = panel.images[2];
-	document.getElementById('carousel-img4').src = panel.images[3];
-	document.getElementById('dialog-description').innerHTML = panel.text;
-	document.getElementById('dialog-title').innerHTML = panel.title;
-	$('#overlay').fadeIn(100);
-	$('html, body').animate({
-        scrollTop: $("#overlay").offset().top
-    }, 500);
 }
 
 function loadGameContent(){
@@ -120,11 +105,32 @@ function loadServerContent(){
 	$("#aboutpanel").hide().load('includes/server.html').fadeIn('500');
 }
 
+function loadEducationContent(){
+	document.getElementById('dialog-title').innerHTML = "Education";
+	$("#overlay-content").hide().load('includes/education.html').fadeIn('500');
+	$('#overlay').fadeIn(100);
+	$('html, body').animate({
+        scrollTop: $("#overlay").offset().top
+    }, 500);
+}
+
+function loadHobbiesContent(){
+	document.getElementById('dialog-title').innerHTML = "Hobbies";
+	$("#overlay-content").hide().load('includes/hobbies.html').fadeIn('500');
+	$('#overlay').fadeIn(100);
+	$('html, body').animate({
+        scrollTop: $("#overlay").offset().top
+    }, 500);
+}
+
 function returntomain(callback){
 	$("#aboutpanel").hide().load('includes/main.html').fadeIn('500', callback);
 	
 	deselectHeader();
 }
+
+
+var selectedCategory;
 
 function selectHeader(headervar){
 	deselectHeader();
