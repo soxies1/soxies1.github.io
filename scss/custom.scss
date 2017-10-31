@@ -9,6 +9,7 @@ body {
     background-image: url('../img/WebsiteShotOfTyson.jpg');
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
@@ -23,11 +24,20 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    color: $white;
     .footer-item {
         height: 100%;
         width: 20%;
         text-align: center;
         float: right;
+        .item-content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    >.container {
+        height: 100%;
     }
     .arrow-up {
         width: 0;
@@ -39,6 +49,21 @@ body {
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
+    }
+    .dist-0 {
+        font-size: $dist-0;
+    }
+    .dist-1 {
+        font-size: $dist-1;
+    }
+    .dist-2 {
+        font-size: $dist-2;
+    }
+    .dist-3 {
+        font-size: $dist-3;
+    }
+    .dist-4 {
+        font-size: $dist-4;
     }
 }
 
