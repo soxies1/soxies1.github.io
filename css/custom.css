@@ -13,6 +13,22 @@ body {
 .content-container {
   height: 100vh;
   padding-bottom: 110px; }
+  .content-container .container {
+    height: 100%; }
+    .content-container .container .main {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+    .content-container .container .c-about {
+      color: #fff; }
+      .content-container .container .c-about h1 {
+        font-size: 55px; }
+      .content-container .container .c-about .fa {
+        font-size: 3rem; }
+      .content-container .container .c-about .fa-linkedin-square {
+        color: #0077B5; }
+      .content-container .container .c-about .fa-github-square {
+        color: #f5f5f5; }
 
 .footer-container {
   height: 80px;
