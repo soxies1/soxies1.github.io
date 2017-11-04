@@ -1,3 +1,50 @@
+$(document).ready(function() {
+    $('.footer-item').each(function(index) {
+
+        $(this).data('index', index);
+        $(this).data('current-class', $(this)[0].classList[1]);
+
+        $(this).click(function() {
+
+            var selected_index = $(this).data('index');
+
+            $(this).removeClass($(this).data('current-class')).addClass('dist-0')
+
+            $(this).data('current-class', 'dist-0');
+
+            $(this).siblings().each(function() {
+
+                var index = $(this).data('index');
+
+                if (selected_index != index) {
+
+                    var newClass = 'dist-'+Math.abs(selected_index - index)
+                    $(this).removeClass($(this).data('current-class')).addClass(newClass)
+
+                    $(this).data('current-class', newClass);
+
+                }
+            });
+
+            // Move arrow above selected item
+            var $this = $(this);
+            var offset = $this.offset();
+            var width = $this.width();
+            var height = $this.height();
+            
+            var centerX = offset.left + width / 2;
+            $('.arrow-up').animate({
+                left: centerX
+            }, 500);
+
+        });
+    });
+
+});
+
+
+
+
 $(window).scroll(function() {
     $('#textgame').each(function() {
         var imagePos = $(this).offset().top;
