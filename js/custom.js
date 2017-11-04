@@ -42,7 +42,15 @@ $(document).ready(function() {
 
 });
 
+var selectedSection = ".c-about";
 
+function showSection(toShow){
+    if(toShow != selectedSection){
+        $(selectedSection).hide()
+        $(toShow).show(500)
+        selectedSection = toShow
+    }
+}
 
 
 $(window).scroll(function() {

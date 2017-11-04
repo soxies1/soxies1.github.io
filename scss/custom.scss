@@ -11,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    color: $white;
 }
 
 .content-container {
@@ -22,9 +23,15 @@ body {
             position: relative;
             top: 50%;
             transform: translateY(-50%);
+            img{
+                max-width: 100%;
+            }
+            .content{
+                background-color: transparentize($opac-fill, .6);
+            }
         }
         .c-about {
-            color: $white;
+            // color: $white;
             h1 {
                 font-size: $header;
             }
@@ -44,6 +51,11 @@ body {
                 #linkedin{
                     padding:2px;
                 }
+            }
+        }
+        .c-education{
+            .content{
+                border-radius: 0 20px 20px 0;
             }
         }
     }

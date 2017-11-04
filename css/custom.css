@@ -8,7 +8,8 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  color: #fff; }
 
 .content-container {
   height: 100vh;
@@ -19,20 +20,24 @@ body {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-    .content-container .container .c-about {
-      color: #fff; }
-      .content-container .container .c-about h1 {
-        font-size: 55px; }
-      .content-container .container .c-about .fa {
-        font-size: 3rem; }
-      .content-container .container .c-about .fa-linkedin-square {
-        color: #0077B5; }
-      .content-container .container .c-about .fa-github-square {
-        color: #f5f5f5; }
-      .content-container .container .c-about .buttons img {
-        max-height: 4rem; }
-      .content-container .container .c-about .buttons #linkedin {
-        padding: 2px; }
+      .content-container .container .main img {
+        max-width: 100%; }
+      .content-container .container .main .content {
+        background-color: rgba(174, 158, 136, 0.4); }
+    .content-container .container .c-about h1 {
+      font-size: 55px; }
+    .content-container .container .c-about .fa {
+      font-size: 3rem; }
+    .content-container .container .c-about .fa-linkedin-square {
+      color: #0077B5; }
+    .content-container .container .c-about .fa-github-square {
+      color: #f5f5f5; }
+    .content-container .container .c-about .buttons img {
+      max-height: 4rem; }
+    .content-container .container .c-about .buttons #linkedin {
+      padding: 2px; }
+    .content-container .container .c-education .content {
+      border-radius: 0 20px 20px 0; }
 
 .footer-container {
   height: 80px;
