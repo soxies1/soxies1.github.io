@@ -12,11 +12,17 @@ body {
     background-size: cover;
     position: relative;
     color: $white;
+    // transition: background 0.5s linear;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
 }
 
 .content-container {
     height: 100vh;
     padding-bottom: $footer-height + 30;
+    padding-top: 30px;
     .container {
         height: 100%;
         .main {
@@ -378,4 +384,10 @@ a:hover,
 .returntomain {
     text-align: center;
     padding-bottom: 10px;
+}
+
+// This pre-loads the background images so no lag on load
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('../img/WebsiteShotOfTyson.jpg') url('../img/new/path.jpg') url('../img/new/learn2hack.png') url('../img/new/work.jpg') url('../img/new/games.jpg');
 }

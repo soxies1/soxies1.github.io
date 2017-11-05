@@ -49,6 +49,26 @@ function showSection(toShow){
         $(selectedSection).hide()
         $(toShow).show(500)
         selectedSection = toShow
+
+        if(selectedSection == '.c-education'){
+            $('body').css('background-image','url(img/new/path.jpg)');
+        }
+        else if(selectedSection == '.c-hackathons'){
+            $('body').css('background-image','url(img/new/learn2hack.png)');
+
+        }
+        else if(selectedSection == '.c-experience'){
+            $('body').css('background-image','url(img/new/work.jpg)');
+            
+        }
+        else if(selectedSection == '.c-games'){
+            $('body').css('background-image','url(img/new/games.jpg)');
+            
+        }else if(selectedSection == '.c-about'){
+            $('body').css('background-image','url(img/WebsiteShotOfTyson.jpg)');
+            
+        }
+
     }
 }
 

@@ -9,11 +9,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease; }
 
 .content-container {
   height: 100vh;
-  padding-bottom: 110px; }
+  padding-bottom: 110px;
+  padding-top: 30px; }
   .content-container .container {
     height: 100%; }
     .content-container .container .main {
@@ -303,5 +308,13 @@ a:hover,
 .returntomain {
   text-align: center;
   padding-bottom: 10px; }
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../img/WebsiteShotOfTyson.jpg") url("../img/new/path.jpg") url("../img/new/learn2hack.png") url("../img/new/work.jpg") url("../img/new/games.jpg"); }
 
 /*# sourceMappingURL=custom.css.map */
